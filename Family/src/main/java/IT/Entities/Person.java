@@ -62,7 +62,7 @@ public abstract class Person implements Comparable {
 
     @Override
     public String toString() {
-        return String.format("| %15s | %3d | %6s | %5s | %3s |",
+        return String.format("| %15s | %3d | %6s | %5s | %6s |",
                 this.name,
                 this.age,
                 this.isInSchool()?"yes":"no",
