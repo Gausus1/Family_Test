@@ -11,13 +11,11 @@ public enum Gender2 {
         Matcher isFemale = p.matcher(name);
         if (isFemale.matches()) {
             System.out.println(Gender2.F.toString());
-            //String.format(gender.F.toString());
             return Gender2.F;
 
         }
         else{
             System.out.println(Gender2.M.toString());
-            //String.format(gender.M.toString());}
             return Gender2.M;}
 
     }

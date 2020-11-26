@@ -1,11 +1,8 @@
 package IT.Entities;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public enum Gender {
 
-    M,F;
+    //M,F;
 
     /*
     DETECT {
