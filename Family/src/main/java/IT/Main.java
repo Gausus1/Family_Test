@@ -2,6 +2,7 @@ package IT;
 
 import IT.Entities.Person;
 import IT.Entities.PersonFactory;
+import IT.data.Loader;
 import IT.data.Reporter;
 
 import java.util.ArrayList;
@@ -32,9 +33,9 @@ public class Main {
 
 
         try {
-            ArrayList<Person> family = getSampleFamily();
+            //ArrayList<Person> family = getSampleFamily();
             //ArrayList<Person> family = Loader.loadPersonsFromJsons();
-            //ArrayList<Person> family = Loader.loadPersonsFromWeb();
+            ArrayList<Person> family = Loader.loadPersonsFromWeb();
             //ArrayList<Person> family = Loader.loadPersonsFromCSV();
 
             Collections.sort(family);
