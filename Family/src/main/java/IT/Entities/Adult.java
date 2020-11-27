@@ -12,7 +12,7 @@ public class Adult extends Person {
 
     private int wage;
 
-    public Adult(String name, int age, Gender2 gender, int wage) {
+    public Adult(String name, int age, Gender gender, int wage) {
         super(name, age, gender);
         this.wage=wage;
     }

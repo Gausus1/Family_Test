@@ -11,10 +11,12 @@ import org.dom4j.Element;
 public abstract class Person implements Comparable {
     private String name;
     private int age;
-    private Gender2 gender;
+    private Gender gender;
 
 
-    public Person(String name, int age, Gender2 gender) {
+
+
+    public Person(String name, int age, Gender gender) {
         this.setName(name);
         this.age = age;
         this.gender=gender;
@@ -35,6 +37,10 @@ public abstract class Person implements Comparable {
         return name;
     }
 
+    public Gender getGender() {
+        return gender;
+    }
+
     public void setAge(int age) {
         this.age = age;
     }
@@ -42,6 +48,10 @@ public abstract class Person implements Comparable {
     public void setName(String name) {
         name = name.substring(0,1).toUpperCase() + name.substring(1);
         this.name = name;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 
     @Override

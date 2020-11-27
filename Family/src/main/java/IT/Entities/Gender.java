@@ -1,22 +1,23 @@
 package IT.Entities;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public enum Gender {
+    F,M;
+    public static Gender getGender(String name){
 
-    //M,F;
+        Pattern p = Pattern.compile(".*(a)$");      // z knihovny java.util.regex
+        Matcher isFemale = p.matcher(name);
+        if (isFemale.matches()) {
+            //System.out.println(Gender.F.toString());
+            return Gender.F;
 
-    /*
-    DETECT {
-        //@Override
-        public  Gender getGender(String name) {
-            Pattern p = Pattern.compile(".*(a)$");      // z knihovny java.util.regex
-            Matcher isFemale = p.matcher(name);
-            if (isFemale.matches()) {
-                return Gender.F;
-            }
-            else{return  Gender.M;}
         }
-    };
-    //public abstract Gender getGender(String name);
+        else{
+            //System.out.println(Gender.M.toString());
+            return Gender.M;}
 
-     */
+    }
+
 }

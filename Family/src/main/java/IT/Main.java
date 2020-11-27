@@ -64,7 +64,7 @@ public class Main {
         family.add(PersonFactory.getPerson("Martin", 26));
         family.add(PersonFactory.getPerson("Martina", 27));
         family.add(PersonFactory.getPerson("Petr", 620));
-       // family.add(new Adult("Petra", 60)); // pořád to jde i takto
+        // family.add(new Adult("Petra", 60)); // pořád to jde i takto
 
         family.add(PersonFactory.getPerson("Anna", 85, 1000));
         family.add(PersonFactory.getPerson("Jirka", 83, 1200));

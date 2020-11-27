@@ -9,7 +9,7 @@ public class Senior extends Person {
 
     private int retirement;
 
-    public Senior(String name, int age,Gender2 gender, int retirement) {
+    public Senior(String name, int age, Gender gender, int retirement) {
         super(name, age, gender);
         this.retirement = retirement;
     }
